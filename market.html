@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper fmr" style="height: unset;">
+		<header class="header">
+			<div class="header__container">
+				<p>ДНР, г.Донецк</p>
+				<nav class="header__nav nav">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="index.html">ГЛАВНАЯ</a>
+						</li>
+
+						<li class="nav__item">
+							<a href="about.html">О НАС</a>
+						</li>
+
+						<li class="nav__item">
+							<a href="market.html">КУПИТЬ</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<section class="market">
+				<div class="market__container">
+
+
+
+
+					<div class="market__grid">
+
+						<form class="market__filtr" data-sticky>
+							<div class="" data-sticky-item>
+								<h3>Фильтры</h3>
+								<span class="border-line"></span>
+								<div class="form-filtr__values">
+									<div class="form-filtr__value">
+										<input class="form-filtr__range-min" type="number" id="min" value="1000" name="minPrice">
+									</div>
+									-
+									<div class="form-filtr__value">
+										<input class="form-filtr__range-max" value="112000" type="number" id="max" name="maxPrice">
+									</div>
+								</div>
+								<div class="form-filtr__range" id="range" data-to></div>
+								<select name="form[]" id="select" class="form-select">
+									<option value="lada" selected>lada</option>
+									<option value="audi">audi</option>
+									<option value="ford">ford</option>
+									<option value="tesla">tesla</option>
+								</select>
+								<button type="submit" id="submitButton" class="block__more">применить</button>
+							</div>
+						</form>
+
+						<div class="market__cars">
+							<div class="car" data-filter-name="lada">
+								<div class="car__img-btn">
+									<span style="background-image: url('img/l1.png');"></span>
+									<button data-popup="#popup">подробнее</button>
+								</div>
+								<div class="car__about">
+									<h2>Лада Веста
+										Кросс, 2024</h2>
+									<p class="car__price">Цена <span>1 100 000р</span></p>
+									<ul>
+										<li>1.6 MT 2WD Life</li>
+										<li>1.6 л (106 л.с.),</li>
+										<li>бензин,</li>
+										<li>механика,</li>
+										<li>передний привод</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="car" data-filter-name="audi">
+								<div class="car__img-btn">
+									<span style="background-image: url('img/a1.png');"></span>
+									<button data-popup="#popup">подробнее</button>
+								</div>
+								<div class="car__about">
+									<h2>Audi A6, 2023</h2>
+									<p class="car__price">Цена <span>1 600 000р</span></p>
+									<ul>
+										<li>1.9 л (130 л.с.),</li>
+										<li>бензин,</li>
+										<li>механика,</li>
+										<li>передний привод</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="car" data-filter-name="ford">
+								<div class="car__img-btn">
+									<span style="background-image: url('img/f1.png');"></span>
+									<button data-popup="#popup">подробнее</button>
+								</div>
+								<div class="car__about">
+									<h2>Ford, 2019</h2>
+									<p class="car__price">Цена <span>800 000р</span></p>
+									<ul>
+										<li>1.9 л (130 л.с.),</li>
+										<li>бензин,</li>
+										<li>механика,</li>
+										<li>задний привод</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="car" data-filter-name="tesla">
+								<div class="car__img-btn">
+									<span style="background-image: url('img/t1.png');"></span>
+									<button data-popup="#popup">подробнее</button>
+								</div>
+								<div class="car__about">
+									<h2>Tesla, 2024</h2>
+									<p class="car__price">Цена <span>3 000 000р</span></p>
+									<ul>
+										<li>170 л.с.,</li>
+										<li>электрокар,</li>
+										<li>автомат,</li>
+										<li>задний привод</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="car" data-filter-name="lada">
+								<div class="car__img-btn">
+									<span style="background-image: url('img/l2.png');"></span>
+									<button data-popup="#popup">подробнее</button>
+								</div>
+								<div class="car__about">
+									<h2>Лада largus, 2018</h2>
+									<p class="car__price">Цена <span>900 000р</span></p>
+									<ul>
+										<li>1.6 MT 2WD Life</li>
+										<li>1.6 л (96 л.с.),</li>
+										<li>бензин,</li>
+										<li>механика,</li>
+										<li>передний привод</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="car" data-filter-name="audi">
+								<div class="car__img-btn">
+									<span style="background-image: url('img/a2.png');"></span>
+									<button data-popup="#popup">подробнее</button>
+								</div>
+								<div class="car__about">
+									<h2>Audi R8, 2023</h2>
+									<p class="car__price">Цена <span>6 600 000р</span></p>
+									<ul>
+										<li>2.9 л (300 л.с.),</li>
+										<li>бензин,</li>
+										<li>механика,</li>
+										<li>передний привод</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="car" data-filter-name="ford">
+								<div class="car__img-btn">
+									<span style="background-image: url('img/f2.png');"></span>
+									<button data-popup="#popup">подробнее</button>
+								</div>
+								<div class="car__about">
+									<h2>Ford, 2020</h2>
+									<p class="car__price">Цена <span>4 800 000р</span></p>
+									<ul>
+										<li>3 л (230 л.с.),</li>
+										<li>бензин,</li>
+										<li>механика,</li>
+										<li>задний привод</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="car" data-filter-name="tesla">
+								<div class="car__img-btn">
+									<span style="background-image: url('img/t2.png');"></span>
+									<button data-popup="#popup">подробнее</button>
+								</div>
+								<div class="car__about">
+									<h2>Tesla, 2024</h2>
+									<p class="car__price">Цена <span>4 000 000р</span></p>
+									<ul>
+										<li>220 л.с.,</li>
+										<li>электрокар,</li>
+										<li>автомат,</li>
+										<li>4x4 привод</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+
+
+						<!-- 
+						<script>
+							const products = document.querySelectorAll('.car');
+							const toggleButton = document.getElementById('toggleButton');
+							let showing = 4;
+
+							function updateProductsDisplay() {
+								for (let i = 0; i < products.length; i++) {
+									if (i < showing) {
+										products[i].style.display = 'flex';
+									} else {
+										products[i].style.display = 'none';
+									}
+								}
+							}
+
+							updateProductsDisplay();
+
+							toggleButton.addEventListener('click', () => {
+
+								console.log(showing - 1 == products.length)
+								if (showing - 1 == products.length) {
+									showing = 4;
+								} else if (showing > products.length) {
+									showing += products.length - showing;
+								} else {
+									showing += 4;
+								}
+								updateProductsDisplay();
+							});
+
+
+						</script>
+ -->
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__content">
+				<div class="footer__container">
+					<p>ДНР, г.Донецк</p>
+					<a href="mailto:machine@mail.ru">machine@mail.ru</a>
+					<a href="tell:+79494880999">тех. поддержка: +79494880999</a>
+					<p>© copy</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g id="Menu / Close_SM">
+							<path id="Vector" d="M16 16L12 12M12 12L8 8M12 12L16 8M12 12L8 16" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						</g>
+					</svg>
+				</button>
+				<div class="popup__text">
+					<div class="car-info-popup">
+
+						<div class="product-swiper-wrap">
+							<div class="swiper swiper__product">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide"><img src="img/1.jpg"></div>
+									<div class="swiper-slide"><img src="img/2.jpg"></div>
+									<div class="swiper-slide"><img src="img/3.jpg"></div>
+									<div class="swiper-slide"><img src="img/4.jpg"></div>
+									<div class="swiper-slide"><img src="img/5.jpg"></div>
+									<div class="swiper-slide"><img src="img/6.jpg"></div>
+								</div>
+							</div>
+							<div class="swiper swiper_thumbnail-product">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide"><img src="img/1.jpg"></div>
+									<div class="swiper-slide"><img src="img/2.jpg"></div>
+									<div class="swiper-slide"><img src="img/3.jpg"></div>
+									<div class="swiper-slide"><img src="img/4.jpg"></div>
+									<div class="swiper-slide"><img src="img/5.jpg"></div>
+									<div class="swiper-slide"><img src="img/6.jpg"></div>
+								</div>
+								<div class="product-button-prev-con">
+									<div class="product-button-prev"></div>
+								</div>
+								<div class="product-button-next-con">
+									<div class="product-button-next"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="car-info-popup__about">
+							<div data-tabs class="tabs">
+								<nav data-tabs-titles class="tabs__navigation">
+									<button type="button" class="tabs__title _tab-active btn">описание</button>
+									<button type="button" class="tabs__title btn">заказать</button>
+								</nav>
+								<div data-tabs-body class="tabs__content">
+									<div class="tabs__body">
+										<h4>Модель</h4>
+										<div class="tabs__info">
+											<ul>
+												<li>Л.с. 1000</li>
+											</ul>
+											<div data-showmore class="block">
+												<div data-showmore-content="0" class="block__content">
+													Дополнительное описание о машине
+												</div>
+												<button data-showmore-button type="button" class="" style="text-decoration: underline; margin-top: 12px;">
+													<span>показать еще</span>
+													<span>скрыть</span>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="tabs__body">
+										<form action="">
+											<div class="b">
+												<input type="text" placeholder="Номер телефона">
+												<input type="text" placeholder="Почта">
+												<input type="text" placeholder="Имя">
+											</div>
+											<div class="flex">
+												<button type="submit" class="button">отправить</button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/app.min.js"></script>
+
+		<script>
+			const inViewport = (entries, observer) => {
+				let i = 0;
+				entries.forEach(entry => {
+					let timer = 0.5 // Стандартное время задержки при появлении нескольких элементов одновременно
+
+					if (entry.target.getAttribute('data-inviewport-once')) var once = entry.target.getAttribute('data-inviewport-once');
+					if (entry.target.getAttribute('data-inviewport-timer')) timer = entry.target.getAttribute('data-inviewport-timer');
+
+					if (entries.length > 1) { // На экране больше чем один элемент
+						let turn;
+
+						if (entry.target.getAttribute('data-inviewport-id')) turn = entry.target.getAttribute('data-inviewport-id'); // Задан ли номер для выполнения
+						else {
+							turn = i;
+							i++;
+						}
+
+						let time = timer * 1000 * turn;
+						if (once) { // Требуется ли повторение
+							if (entry.isIntersecting) setTimeout(() => entry.target.classList.add("is-inViewport"), time);
+						} else setTimeout(() => entry.target.classList.toggle("is-inViewport", entry.isIntersecting), time);
+					} else { // Таймер срабатывания не задан
+						if (once) { // Требуется ли повторение
+							if (entry.isIntersecting) entry.target.classList.add("is-inViewport");
+						} else entry.target.classList.toggle("is-inViewport", entry.isIntersecting);
+					}
+				});
+			};
+
+			const Obs = new IntersectionObserver(inViewport);
+			const obsOptions = {}; //See: https ://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API#Intersection_observer_options
+
+			// Attach observer to every [data-inviewport] element:
+			const ELs_inViewport = document.querySelectorAll('[data-inviewport]');
+			ELs_inViewport.forEach(EL => {
+				Obs.observe(EL, obsOptions);
+			});
+		</script>
+</body>
+
+</html>
